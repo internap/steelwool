@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/internap/steelwool.svg?branch=master)](https://travis-ci.org/internap/steelwool)
+[![PyPI version](https://badge.fury.io/py/steelwool.svg)](http://badge.fury.io/py/steelwool)
 
 Steelwool
 ======
