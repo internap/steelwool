@@ -1,0 +1,2 @@
+python-ironicclient>=0.6.0
+python-novaclient>=2.20.0
