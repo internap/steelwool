@@ -1,0 +1,14 @@
+language: python
+python:
+- '2.7'
+install:
+- pip install tox
+script: tox -r
+deploy:
+  provider: pypi
+  user: internaphosting
+  password:
+    secure: LxIKooXrMB+7ZWvU8THZAQjLK4YFPrUPQ7K6op5Pnxq+AqesWjlA7nq9s3lBi9TTgS/29p5qYvBIwpfxbaYvXBDcpUePtF4p0UXT76OAgz6EmKUzqIBBm9o0qVAPgA7BblV6wC9s07VThsEIdv/Nnbaesp2KahjmMsltbc/VbjcZCiWB7s5EDtrwEU1Mll9DIZF+P/D2mW2p+b7Dhf6BSZIaZRUlXCqTeF1cNwUdVdEehPhw99ms/sOxudg14qToCRYcV9Xa18mzf047woIhH1H0xmt28fkIpJAE1esqm7DdFJGeb4xqFPCeQUNjT3uTbmXr2l1z7yop7Js/2bDBBwEsKCzamHOyOhlu6TduOLPTA/7XULEss8AG7JUWMn5jtotwngk26gAQFynOQS8x0McHKy/WVsZUFBTv59VQs58+iKlaShY7jtUgLYNN8BTNu++ObVq7CVzVA9infi1/7/jpgHEUe5Wv0yWis55f1Tf6auLsdLTSZ+yRZhmQ1u2aPrGJ37UMSiUqxqIt7kI+QVadMQzi/xHCPck2idxRzfIQbX2Z+Jbdsg8jKVRXMRMqZ0C9rjyD2pZZSYKiDeL6cSU/or/KSDlhDRHQSQXuIIaeQ14owaDLs/W+/8DijCR++JNIIJSZw/H7bFFavhhYUi1SFRACB/jTmYQfDi/QkXw=
+  on:
+    tags: true
+    repo: internap/steelwool
