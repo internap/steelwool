@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/internap/steelwool.svg?branch=master)](https://travis-ci.org/internap/steelwool)
+
 Steelwool
 ======
 
