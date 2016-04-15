@@ -1,14 +1,17 @@
 language: python
 python:
-- '2.7'
+  - '2.7'
+
 install:
-- pip install tox
+  - pip install tox
+
 script: tox -r
 deploy:
   provider: pypi
   user: internaphosting
   password:
-    secure: LxIKooXrMB+7ZWvU8THZAQjLK4YFPrUPQ7K6op5Pnxq+AqesWjlA7nq9s3lBi9TTgS/29p5qYvBIwpfxbaYvXBDcpUePtF4p0UXT76OAgz6EmKUzqIBBm9o0qVAPgA7BblV6wC9s07VThsEIdv/Nnbaesp2KahjmMsltbc/VbjcZCiWB7s5EDtrwEU1Mll9DIZF+P/D2mW2p+b7Dhf6BSZIaZRUlXCqTeF1cNwUdVdEehPhw99ms/sOxudg14qToCRYcV9Xa18mzf047woIhH1H0xmt28fkIpJAE1esqm7DdFJGeb4xqFPCeQUNjT3uTbmXr2l1z7yop7Js/2bDBBwEsKCzamHOyOhlu6TduOLPTA/7XULEss8AG7JUWMn5jtotwngk26gAQFynOQS8x0McHKy/WVsZUFBTv59VQs58+iKlaShY7jtUgLYNN8BTNu++ObVq7CVzVA9infi1/7/jpgHEUe5Wv0yWis55f1Tf6auLsdLTSZ+yRZhmQ1u2aPrGJ37UMSiUqxqIt7kI+QVadMQzi/xHCPck2idxRzfIQbX2Z+Jbdsg8jKVRXMRMqZ0C9rjyD2pZZSYKiDeL6cSU/or/KSDlhDRHQSQXuIIaeQ14owaDLs/W+/8DijCR++JNIIJSZw/H7bFFavhhYUi1SFRACB/jTmYQfDi/QkXw=
+    secure: CKW0Ut7snv41yzOGifZ0FeXz8KIZdXsyylM0h+alGd0fJpWGu3klykq9pJWEDt3iOaHQ3cQrJEX4MUAGq9LXyPF/SMD6IDHapJ0+yZ/Wy+YF6+aQnViathG47oYz6cVytILmtL2M442TFKMcvlmHG+/Ast6zkVCzikyf5ZWA8uikNY8raXd4EsUQxY+sKyGmONjIyg8rZ8FWKN2DUeMutRpC/Yy/tIyzUW13v1Y6WeTZNivMa9cI/wmGawtMYb5ZQ2wvUw9NoO4zb7i1rZ0X7gOZHP0zr2nM7DgsIeieWk+kMxACJK8N+LmDSny80ZYBkj+DVwXqnu7FthHPiqCf9ohFIAn9PKM0qge2/mWAcbAWiJwFNlogloANpig/fDwLgNiNjc8lcCt9Zj0KgPUZjKwXSI6IU9xtF91QEe8KFeHt4C+oRThvPhKE8OZJXfufazB9pcheqknEZUi7ksNIw/MEtGI3r+STthR9yE3Ya+jcDhCm7pVYmN2MqdH6+gVjyDNF/aBZjXzvAP3fDVAdQjVAldPRsNOxv6KWaIyb2DY2uR1z3KvU71BPYotUiUfxfnJvWWlzrmpGPxIHWraYScdK+lcWuN6bFN2BnhYnThshXoMBEFzIC0byyzWUbjI45aBX1loXmKT4niMVZdIg4Dcmalvf0MMstpsEzHYsEyU=
   on:
     tags: true
+    distributions: sdist bdist_wheel
     repo: internap/steelwool
